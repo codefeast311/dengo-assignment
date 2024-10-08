@@ -104,19 +104,41 @@ const PeopleTable: React.FC = () => {
                 Awaiting Approval
               </Button>
             </div>
-
             <div className="export-buttons">
-              <Input
-                placeholder="Search by name or email"
-                prefix={<SearchOutlined style={{ padding: 10 }} />}
+              <div
                 style={{
-                  borderRadius: "32px",
-                  background: "#F3F3F3",
-                  height: 31,
-                  width: 276,
+                  display: "flex",
                 }}
-                className="search-input"
-              />
+              >
+                <Input
+                  placeholder="Search by name or email"
+                  prefix={<SearchOutlined style={{ padding: 10 }} />}
+                  style={{
+                    borderRadius: "32px",
+                    background: "#F3F3F3",
+                    height: 32,
+                    width: 276,
+                  }}
+                  className="search-input"
+                />
+                <Button
+                  icon={
+                    <Image
+                      src="/images/filter.png"
+                      alt="Export"
+                      width={24}
+                      height={24}
+                      priority
+                    />
+                  }
+                  style={{
+                    background: "#F3F3F3",
+                    marginLeft: 10,
+                    height: 32,
+                  }}
+                  className="filter-button"
+                ></Button>
+              </div>
               <div className="right-buttons">
                 <Button
                   icon={

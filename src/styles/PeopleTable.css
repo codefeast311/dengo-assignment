@@ -133,7 +133,7 @@
 
 /* Custom TabBar */
 .customTabBar .ant-tabs-tab-active {
-  border-bottom: 2px solid #595959; /* Set the bottom border for the active tab */
+  border-bottom: 4px solid #595959; /* Set the bottom border for the active tab */
 }
 
 .customTabBar .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
@@ -204,6 +204,10 @@
   gap: 8;
 }
 
+.filter-button {
+  display: none !important;
+}
+
 /* Mobile adjustments */
 @media only screen and (max-width: 768px) {
   /* Mobile Styles */
@@ -262,6 +266,9 @@
   }
   .bulk-add-button {
     display: none;
+  }
+  .filter-button {
+    display: block !important;
   }
 }
 
