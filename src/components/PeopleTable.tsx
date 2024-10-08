@@ -118,6 +118,7 @@ const PeopleTable: React.FC = () => {
                     background: "#F3F3F3",
                     height: 32,
                     width: 276,
+                    border: "none",
                   }}
                   className="search-input"
                 />
@@ -257,7 +258,7 @@ const PeopleTable: React.FC = () => {
         onClose={handleCloseDrawer}
         closable={false}
         open={drawerVisible}
-        width={360}
+        width={366}
         bodyStyle={{
           padding: "24px 40px", // Proper padding for alignment
           paddingBottom: 80,
@@ -298,6 +299,7 @@ const PeopleTable: React.FC = () => {
                 borderRadius: "3px",
                 background: "#F3F3F3",
                 padding: "8px",
+                border: "none",
               }}
             />
           </Form.Item>
@@ -314,6 +316,7 @@ const PeopleTable: React.FC = () => {
                 borderRadius: "3px",
                 background: "#F3F3F3",
                 padding: "8px",
+                border: "none",
               }}
             />
           </Form.Item>
@@ -330,6 +333,7 @@ const PeopleTable: React.FC = () => {
                 borderRadius: "3px",
                 background: "#F3F3F3",
                 padding: "8px",
+                border: "none",
               }}
             />
           </Form.Item>
@@ -346,6 +350,7 @@ const PeopleTable: React.FC = () => {
                 borderRadius: "3px",
                 background: "#F3F3F3",
                 padding: "8px",
+                border: "none",
               }}
             />
           </Form.Item>
@@ -390,43 +395,46 @@ const PeopleTable: React.FC = () => {
                 borderRadius: "3px",
                 background: "#F3F3F3",
                 padding: "8px",
+                border: "none",
               }}
             />
           </Form.Item>
+          <div>
+            <Form.Item>
+              <Button
+                type="primary"
+                htmlType="submit"
+                style={{
+                  backgroundColor: "#172026",
+                  color: "#FFFFFF",
+                  width: "288px",
+                  height: "50px",
+                  fontSize: "16px",
+                  border: "none",
+                  borderRadius: "3px",
+                  marginTop: "90px",
+                  // padding: "7px",
+                }}
+              >
+                Save
+              </Button>
+            </Form.Item>
 
-          <Form.Item>
-            <Button
-              type="primary"
-              htmlType="submit"
-              style={{
-                backgroundColor: "#172026",
-                color: "#FFFFFF",
-                width: "288px",
-                height: "40px",
-                fontSize: "16px",
-                border: "none",
-                marginTop: "50px",
-                padding: "10px",
-              }}
-            >
-              Save
-            </Button>
-          </Form.Item>
-
-          <Form.Item>
-            <Button
-              onClick={handleCloseDrawer}
-              style={{
-                color: "#000000",
-                width: "100%",
-                height: "40px",
-                border: "none",
-                fontSize: "16px",
-              }}
-            >
-              Cancel
-            </Button>
-          </Form.Item>
+            <Form.Item>
+              <Button
+                onClick={handleCloseDrawer}
+                style={{
+                  color: "#000000",
+                  width: "288px",
+                  height: "30px",
+                  border: "none",
+                  fontSize: "16px",
+                }}
+              >
+                Cancel
+              </Button>
+            </Form.Item>
+          </div>
         </Form>
       </Drawer>
     </div>
