@@ -1,0 +1,291 @@
+/* Main People Section Title */
+.people-title {
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 40.8px;
+  text-align: left;
+  color: black;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+/* Tabs Container */
+.tabs-container {
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+/* Tabs Custom Styling */
+.ant-tabs-tab {
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: black;
+}
+
+.ant-tabs-tab-active .ant-tabs-tab-btn {
+  font-weight: 600;
+  color: black;
+}
+
+.ant-tabs-ink-bar {
+  background: black;
+  height: 3px;
+}
+
+/* Table Controls */
+.table-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Approval Buttons */
+.approval-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.approval-button {
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 6px 20px;
+  border-radius: 50px;
+  background-color: #f0f0f0;
+  border: none;
+  cursor: pointer;
+  color: black;
+}
+
+.selected {
+  background-color: black;
+  color: white;
+}
+
+/* Search Input */
+.search-input {
+  width: 300px;
+  height: 40px;
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+  font-size: 16px;
+  padding-left: 10px;
+}
+
+/* Export and Action Buttons */
+.export-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.action-button {
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+  background-color: #f0f0f0;
+}
+
+.add-button {
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* People Table */
+.people-table-content {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.bold-text {
+  font-weight: 600;
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+}
+
+.status-tag {
+  background-color: #eaf6ed;
+  color: #1e6e3f;
+  padding: 4px 12px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+  text-align: center;
+}
+
+.ant-table-thead > tr > th {
+  background-color: #f7f7f7;
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.ant-table-tbody > tr > td {
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+  font-size: 14px;
+}
+
+.ant-table-row:hover td {
+  background-color: #f9f9f9;
+}
+
+/* Custom TabBar */
+.customTabBar .ant-tabs-tab-active {
+  border-bottom: 2px solid #595959; /* Set the bottom border for the active tab */
+}
+
+.customTabBar .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #000000; /* Set the text color of the active tab */
+}
+
+.customTabBar .ant-tabs-tab:hover {
+  color: #000000; /* Optional: Change the text color on hover */
+}
+
+.customTabBar {
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.customTabBar .ant-tabs-tab {
+  margin-right: 24px;
+}
+
+.customTabBar .ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #000; /* Adjust to the active color */
+  font-weight: thin;
+}
+
+.customTabBar .ant-tabs-tab-btn {
+  font-size: 16px;
+}
+
+.customTabBar .ant-tabs-ink-bar {
+  height: 2px;
+  background-color: black; /* This should match the design */
+}
+
+/* Custom Select */
+.custom-select .ant-select-selector {
+  background-color: #f3f3f3 !important; /* Light grey background */
+  border-radius: 3px !important; /* Rounded corners */
+  border: none !important; /* No border */
+}
+
+.custom-select .ant-select-dropdown {
+  background-color: #f3f3f3 !important; /* Light grey background for dropdown */
+  border-radius: 3px !important; /* Rounded corners for dropdown */
+  border: none !important; /* No border */
+}
+
+.custom-select .ant-select-item {
+  background-color: #f3f3f3 !important; /* Dropdown item background */
+  border-radius: 3px !important; /* Ensure each item has rounded corners */
+}
+
+.custom-select .ant-select-item-option-active {
+  background-color: #e0e0e0 !important; /* Slightly darker grey on hover */
+}
+
+/* People Table Layout */
+.people-table {
+  padding: 20px;
+}
+
+.table-controls {
+  margin-bottom: 16px;
+  overflow-y: scroll;
+}
+
+.right-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 8;
+}
+
+/* Mobile adjustments */
+@media only screen and (max-width: 768px) {
+  /* Mobile Styles */
+  .button-group {
+    text-align: left; /* Align buttons below search input on mobile */
+    margin-top: 16px;
+  }
+
+  .people-title {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+
+  .people-table-content {
+    overflow-x: auto;
+  }
+
+  /* Hide Approval Buttons on Mobile */
+  .approval-buttons {
+    display: none; /* Hide both approval and awaiting approval buttons */
+  }
+
+  /* Adjust search input width */
+  .search-input {
+    width: 100% !important;
+    height: 40px;
+    margin-bottom: 16px; /* Add margin to separate the input from buttons */
+  }
+
+  .export-buttons {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically on mobile */
+    gap: 8px;
+    width: 100%;
+  }
+
+  .action-button,
+  .add-button {
+    width: 100%; /* Full width on mobile */
+    margin-bottom: 8px;
+    height: 40px;
+  }
+
+  .table-controls {
+    flex-direction: column; /* Stack search input and buttons on mobile */
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .people-table-content {
+    overflow-x: scroll; /* Ensure table scrolls horizontally if content overflows */
+  }
+
+  .people-title {
+    font-size: 20px; /* Adjust font size on mobile */
+  }
+  .bulk-add-button {
+    display: none;
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .people-title {
+    font-size: 24px;
+  }
+
+  .people-table-content {
+    overflow-x: auto;
+  }
+
+  .search-input {
+    width: 100%;
+  }
+
+  .action-button,
+  .add-button {
+    margin-right: 10px;
+    width: auto;
+  }
+
+  .right-buttons {
+    display: flex;
+  }
+}

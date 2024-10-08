@@ -1,0 +1,24 @@
+.menu {
+  padding: 0; /* Remove padding around menu items */
+}
+
+.iconWrapper {
+  padding: 3px 3px 2px 2px; /* Padding for icons */
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  transition: opacity 0.3s ease; /* Smooth opacity transition for collapsed state */
+}
+
+.menuText {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #000000; /* Text color black */
+  opacity: 1; /* Full opacity when sidebar is expanded */
+  transition: opacity 0.3s ease; /* Smooth opacity transition for text */
+}

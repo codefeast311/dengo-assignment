@@ -1,0 +1,80 @@
+html,
+body {
+  font-family: "Poppins", sans-serif; /* Use Poppins font family */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+button,
+input,
+select,
+textarea {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 767px) {
+  .sidebar {
+    display: none; /* Hide sidebar on mobile */
+  }
+
+  .mobile-avatar {
+    display: block; /* Show avatar on mobile */
+  }
+
+  .header-actions {
+    display: none; /* Hide full header actions on mobile */
+  }
+}
+
+/* Tablet and larger screens */
+@media (min-width: 768px) {
+  .sidebar {
+    display: block; /* Show sidebar on tablet and larger screens */
+  }
+
+  .mobile-avatar {
+    display: none; /* Hide mobile avatar on larger screens */
+  }
+
+  .header-actions {
+    display: flex; /* Show header actions on larger screens */
+  }
+}
+
+@media (min-width: 600px) {
+  .mobile-menu-button {
+    display: none !important; /* Hide burger menu on tablet and larger screens */
+  }
+}
+
+.logo-text {
+  margin-left: 30px;
+}
+
+/* Ultra-small screen adjustments */
+@media (max-width: 600px) {
+  .header-action-active,
+  .header-action-help {
+    display: none !important; /* Hide the Active button on very small screens */
+  }
+  .mobile-menu-button {
+    display: block; /* Show burger menu on mobile */
+  }
+  .logo-text {
+    margin-left: 0px !important; /* Remove left margin on logo text */
+  }
+}

@@ -1,0 +1,14 @@
+.menuText {
+  font-family: "Poppins", sans-serif; /* Use the Poppins font */
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+.ant-menu-item-selected {
+  background-color: #f0f0f0 !important;
+  padding-left: 240px;
+  border-left: 4px solid #595959;
+  border-radius: 0 !important;
+  color: inherit !important;
+}
