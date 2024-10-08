@@ -135,6 +135,7 @@ const PeopleTable: React.FC = () => {
                     background: "#F3F3F3",
                     marginLeft: 10,
                     height: 32,
+                    width: 50,
                   }}
                   className="filter-button"
                 ></Button>
