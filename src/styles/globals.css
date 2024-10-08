@@ -72,7 +72,9 @@ textarea {
     display: none !important; /* Hide the Active button on very small screens */
   }
   .mobile-menu-button {
-    display: block; /* Show burger menu on mobile */
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .logo-text {
     margin-left: 0px !important; /* Remove left margin on logo text */
