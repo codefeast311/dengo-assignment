@@ -1,10 +1,16 @@
 // pages/_app.tsx
-import '../styles/globals.css';  // Global styles
-import '../styles/AppLayout.css';  // Specific styles
-import '../styles/PeopleTable.css';  // Specific styles
-import '../styles/Sidebar.css'
+import "../styles/globals.css"; // Global styles
+import "../styles/AppLayout.css"; // Specific styles
+import "../styles/PeopleTable.css"; // Specific styles
+import "../styles/Sidebar.css";
 
-function MyApp({ Component, pageProps }) {
+function MyApp({
+  Component,
+  pageProps,
+}: {
+  Component: React.FC;
+  pageProps: any;
+}) {
   return <Component {...pageProps} />;
 }
 
